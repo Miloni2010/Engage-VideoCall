@@ -30,10 +30,10 @@ io.on('connection', socket=>{
         socket.on('message', message =>{
             io.to(roomId).emit('createMessage', message)
         })
-        
+
     });
 })
 
-server.listen(3030, function(){
+server.listen(process.env.PORT || 3030, function(){
     console.log("The serevr is running on port 3030");
 });

@@ -103,7 +103,9 @@ video{
     color: #F5F5F5;
 }
 
-
+.leave-meeting{
+    color: red;
+}
 
 .unmute, .stop {
     color: #CC3B33;
